@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "F500v2")(type "KiCad")(uri "${KIPRJMOD}/F500v2.pretty")(options "")(descr "Footprints próprios da Aviônica F-500 v2"))
+)

@@ -1,0 +1,30 @@
+# KiCad: backups, histórico local, caches e travas
+*-backups/
+.history/
+_autosave-*
+*.kicad_prl
+fp-info-cache
+*.lck
+\#auto_saved_files#
+~*.lck
+# Python / build
+__pycache__/
+*.pyc
+build/
+# LaTeX (tectonic) — o PDF final fica em docs/
+docs/latex/*.aux
+docs/latex/*.log
+docs/latex/*.toc
+docs/latex/*.out
+docs/latex/Video_2G4_F500_Documentacao.pdf
+# macOS
+.DS_Store
+# Material de terceiros / interno: não redistribuir (ver README, seção Referências)
+**/datasheet_*.pdf
+**/Transmissao_de_video_original.pdf
+**/Transmissao_de_video_referencia.pdf
+*.step
+*.stp
+
+# repositório próprio (f500-video-2g4)
+video_2g4_f500/
