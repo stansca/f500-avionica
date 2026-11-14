@@ -40,7 +40,7 @@ BLOCKS = {
 COMPS = [
     # ---------------- 1. ALIMENTAÇÃO ----------------
     dict(ref="J1", lib="Connector_Generic:Conn_01x02", value="XT30 BATERIA 2S", blk="ALIM",
-         fp="Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal", pins={"1": "VBAT_IN", "2": "GND"}, sch=(25.4, 40.64, 180)),
+         fp="Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal", pins={"1": "GND", "2": "VBAT_IN"}, sch=(25.4, 40.64, 180)),  # footprint AMASS: pad 1 = "−", pad 2 = "+" (serigrafia). Corrigido em 2026-11-14
     dict(ref="J2", lib="Connector_Generic:Conn_01x02", value="CHAVE PRINCIPAL", blk="ALIM", fp=XH2,
          pins={"1": "VBAT_IN", "2": "VBAT_SW"}, sch=(25.4, 60.96, 180)),
     dict(ref="D1", lib="Diode:SS34", value="SS34", blk="ALIM", fp="Diode_SMD:D_SMA_Handsoldering",
