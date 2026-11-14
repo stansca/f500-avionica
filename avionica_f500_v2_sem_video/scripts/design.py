@@ -138,11 +138,13 @@ BOARD_W, BOARD_H = 60.0, 100.0
 NETCLASSES = {
     "Bateria":  dict(track=1.2, clearance=0.25, via_dia=1.0, via_drill=0.5,
                      nets=["VBAT_IN", "VBAT_SW", "VBAT", "GND"]),
-    "Pyro":     dict(track=1.0, clearance=0.25, via_dia=1.0, via_drill=0.5, nets=["VBAT_ARM", "PYRO1_D", "PYRO2_D"]),
+    "Pyro":     dict(track=1.0, clearance=0.25, via_dia=1.0, via_drill=0.5, nets=["VBAT_ARM", "PYRO1_D", "PYRO2_D", "Net-(J9-Pin_2)", "Net-(J10-Pin_2)"]),
     "Alim_5V":  dict(track=0.6, clearance=0.2, via_dia=0.8, via_drill=0.4, nets=["+5V"]),
     "Alim_3V3": dict(track=0.5, clearance=0.2, via_dia=0.8, via_drill=0.4, nets=["+3V3"]),
-    "RF_50ohm": dict(track=2.8, clearance=0.3, via_dia=0.8, via_drill=0.4, nets=["LORA_ANT"]),
+    "RF_50ohm": dict(track=2.8, clearance=0.3, via_dia=0.8, via_drill=0.4, nets=["LORA_ANT", "Net-(J3-In)"]),
 }
+# Redes de 2 pinos perdem o nome no esquemático gerado (viram Net-(Ref-Pino)); por isso os nomes automáticos
+# também entram nas netclasses acima (corrigido em 2026-11-14: antes RF e pyro caíam na Default de 0,25 mm).
 DEFAULT_TRACK = 0.25
 
 TEXT_NOTES = [

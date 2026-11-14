@@ -671,6 +671,18 @@
       {
         "netclass": "RF_50ohm",
         "pattern": "LORA_ANT"
+      },
+      {
+        "netclass": "Pyro",
+        "pattern": "Net-(J9-Pin_2)"
+      },
+      {
+        "netclass": "Pyro",
+        "pattern": "Net-(J10-Pin_2)"
+      },
+      {
+        "netclass": "RF_50ohm",
+        "pattern": "Net-(J3-In)"
       }
     ]
   },
